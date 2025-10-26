@@ -1,7 +1,7 @@
 FROM node:22-alpine
 
 RUN apk update && \
-    apk add --no-cache git sudo && \
+    apk add --no-cache git sudo openssh-client && \
     rm -rf /var/cache/apk/*
 
 ARG USERNAME=node
